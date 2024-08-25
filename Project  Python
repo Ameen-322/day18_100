@@ -1,0 +1,25 @@
+print("One-Million-To-One")
+print()
+answer = 510000
+guess = 0
+while True:
+ my_guess = int(input("What is your guess? "))
+ if my_guess <  0:
+   guess += 1
+   exit()
+ if my_guess > answer:
+   print("Too high")
+   guess += 1
+   print()
+ elif my_guess < answer:
+   print("Too low")
+   guess += 1
+   print()
+ elif my_guess == answer:
+   print("You are a star🥳🥳🌟")
+   guess += 1
+   print()
+   print("It took you", guess, "guesses to get it correct!")
+   break
+ else:
+   print("That's not right! Try again")
